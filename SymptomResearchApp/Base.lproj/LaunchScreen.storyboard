@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +21,53 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SYMPTOMS TRACKER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBD-Jb-xps">
+                                <rect key="frame" x="16" y="240" width="343" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.017020852572879802" green="0.057252859780320915" blue="0.50848667512690349" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vpR-ip-CIv">
+                                <rect key="frame" x="0.0" y="317.5" width="375" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jjs-H7-F5B">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="128"/>
+                                        <color key="backgroundColor" red="0.62115323600000005" green="0.1793369346" blue="0.21572748389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m7o-eB-6Xc">
+                                        <rect key="frame" x="94" y="0.0" width="93.5" height="128"/>
+                                        <color key="backgroundColor" red="0.93087722081218272" green="0.86118927545169532" blue="0.12080516292365785" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uw6-eo-Kid">
+                                        <rect key="frame" x="187.5" y="0.0" width="94" height="128"/>
+                                        <color key="backgroundColor" red="0.38477580519999999" green="0.536358577" blue="0.39873415839999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xVY-vz-9Kr">
+                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="128"/>
+                                        <color key="backgroundColor" red="0.017020852570000002" green="0.057252859779999998" blue="0.50848667510000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="9PX-FO-2De"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vpR-ip-CIv" secondAttribute="trailing" id="8es-cg-0fI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FBD-Jb-xps" secondAttribute="trailing" id="EFf-TS-34l"/>
+                            <constraint firstItem="vpR-ip-CIv" firstAttribute="top" secondItem="FBD-Jb-xps" secondAttribute="bottom" constant="50" id="Om3-XQ-aWD"/>
+                            <constraint firstItem="FBD-Jb-xps" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Wgi-qa-t2z"/>
+                            <constraint firstItem="vpR-ip-CIv" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="hlQ-Lf-mbY"/>
+                            <constraint firstItem="FBD-Jb-xps" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-80" id="ktH-s6-fkL"/>
+                            <constraint firstItem="FBD-Jb-xps" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="xzs-x5-Tpp"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
 </document>
